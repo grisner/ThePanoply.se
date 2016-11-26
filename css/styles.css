@@ -60,4 +60,22 @@ a:active {
   height: 200px;
 }
 
+@media (max-width:1049px) {	
+	.row {
+
+	}
+	#fb-root, #oursound-root {
+		display:block;
+		margin:auto;
+		width: 500px;
+	}
+}
+
+@media (max-width: 549px) {
+	#fb-root, #oursound-root {
+		width: 85%;
+	}
+}
+
+
 
