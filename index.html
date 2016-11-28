@@ -1,60 +1,60 @@
 <!DOCTYPE html> 
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="http://prod-thepanoply.rhcloud.com/sites/default/files/ThePanoplyLoggav2.72_72_0.jpg" type="image/jpeg" />
+    <head>
+        <meta charset="UTF-8" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="http://prod-thepanoply.rhcloud.com/sites/default/files/ThePanoplyLoggav2.72_72_0.jpg" type="image/jpeg" />
 
-    <title>The Panoply </title>
+        <title>The Panoply </title>
 
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 
-    <script type"text/javascript">
-      $(function() {
-    // Stick the #nav to the top of the window
-    var nav = $('#nav');
-    var navHomeY = nav.offset().top;
-    var isFixed = false;
-    var $w = $(window);
-    $w.scroll(function() {
-        var scrollTop = $w.scrollTop();
-        var shouldBeFixed = scrollTop > navHomeY;
-        if (shouldBeFixed && !isFixed) {
-            nav.css({
-                position: 'fixed',
-                top: 0,
-                left: nav.offset().left,
-                width: nav.width()
+        <script type"text/javascript">
+        // Menu script
+            $(function() {
+                // Stick the #nav to the top of the window
+                var nav = $('#nav');
+                var navHomeY = nav.offset().top;
+                var isFixed = false;
+                var $w = $(window);
+                $w.scroll(function() {
+                    var scrollTop = $w.scrollTop();
+                    var shouldBeFixed = scrollTop > navHomeY;
+                    if (shouldBeFixed && !isFixed) {
+                        nav.css({
+                            position: 'fixed',
+                            top: 0,
+                            left: nav.offset().left,
+                            width: nav.width()
+                        });
+                        isFixed = true;
+                    }
+                    else if (!shouldBeFixed && isFixed)
+                    {
+                        nav.css({
+                            position: 'static'
+                        });
+                        isFixed = false;
+                    }
+                });
             });
-            isFixed = true;
-        }
-        else if (!shouldBeFixed && isFixed)
-        {
-            nav.css({
-                position: 'static'
-            });
-            isFixed = false;
-        }
-    });
-});
-    </script>
+        </script>
 
-<style>
-  #plugins {
-  	background-color: red;
-	background-size: cover;
-	-moz-background-size: cover
-  }
-</style>
+        <style>
+        #plugins {
+            background-color: white;
+            background-size: cover;
+            -moz-background-size: cover
+        }
+        </style>
 
-  </head>
+    </head>
 
   <script>
-<!--//--><![CDATA[// ><!--
+// Facebook script
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -62,18 +62,19 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=591696517649366";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-//--><!]]>
 </script>
-  <body>
+<body>
+
+<header id="page-header" style="font-size:72px;color:black;background:url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg');">
+    <H1>The Panoply</H1>
+</header> <!-- /#page-header -->
 
 
-    <h1>The Panoply Steelband</h1>
 
-    <section id="Header" class=""
+    <section id="HeaderDivider" class=""
     <section id="Menu" class="divider">
-          <!-- The header code, including the menu -->
-    <div id="header">
-        <div id="logo"></div>
+          
+ 
         <div id="navWrap">
             <div id="nav">
                 <ul>
@@ -85,19 +86,18 @@
                 <br class="clearLeft" />
             </div>
         </div>
-    </div>
+    
 
     </section>
     
 
 
-<section id="splash" style="background-color:grey;">
-    <h1>The Panoply</h1>
+<section id="splash" style="background-color:white">
 </section>
 <section id="socnet" style="background-color:white">
   <p>this is where the icons for various social networks will go</p>
 </section>
-	<section id="about" style="background-color:lightblue">
+	<section id="about" style="background-color:white">
         <div class="container">
             <div class="row">
                 <p>Vi är en grupp engagerade musiker som tillsammans spelar oljefat med hemmabas i Södertälje. Vi spelar de flesta typer av musik.</p>
