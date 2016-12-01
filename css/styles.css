@@ -1,19 +1,26 @@
-body {
+/*body {
    
-   color: #999;
    font: 12px/1.4em Arial,sans-serif;
 }
-
+*/
 #wrap {
    margin: 10px auto;        
    background: #666;
    padding: 10px;
    width: 700px;
 }
-/*h1 {
-  background: url("http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg") no-repeat fixed;
+h1 {
+  
+  background: url("http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-}*/
+  
+  font-size:96px;
+  color:black;
+}
+
+
 /*#logo {
    font-size: 30px;  
    line-height: 40px;    
@@ -77,5 +84,5 @@ a:active {
 	}
 }
 
-
+*/
 
