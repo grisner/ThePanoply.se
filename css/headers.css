@@ -1,0 +1,30 @@
+#header {
+  /*background: url("http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg") no-repeat;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+h1 {
+  
+  text-transform: uppercase;
+
+
+  font-size:72px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color:black;
+
+      position: relative;
+    z-index: 100;
+  
+}
+
+#headerbackground {
+  
+      position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
