@@ -26,8 +26,8 @@ h1 {
   font-family: Helvetica;
   font-weight: bold;
   color:black;
-
-      position: relative;
+vertical-align: middle;
+      text-align: center;
     z-index: 100;
   
 }

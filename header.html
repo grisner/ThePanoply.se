@@ -8,25 +8,56 @@
 
 <style>
     #mainHeaderWrapper{
-    background: url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg') 50% / 100%;
-    border-bottom: 2px solid #000;
-}
-#mainHeaderWrapper img{
-    vertical-align: top;
-    height: 326px;
-    width: 100%; /* max width */
-    opacity: 0;  /* make it transparent */
-}
-    </style>
+        
+        border-bottom: 2px solid #000;
+        position: relative;
+        
+    }
+    #mainHeaderWrapper img{
+        /*vertical-align: middle;*/
+        height: 326px;
+        width: 100%; /* max width */
+        opacity: 0;  /* make it transparent */
+    }
+
+    h1 {
+        background: url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg') 50% / 100%;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        /*margin-top: -5em;*/
+        
+        
+  
+        height: 370px;
+    }
+
+
+	#myoutercontainer { position:relative }
+	#myinnercontainer { position:absolute; top:50%; height:10em; margin-top:-5em }
+
+
+</style>
 
 </head>
 <body>
+
+
+
   
 <div id="mainHeaderWrapper">
-   <img src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg"><!-- I'm invisible! yey!-->
+   <!--<img src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg"><! I'm invisible! yey!-->
    <h1>the panoply</h1>
 </div>
   Notice the DIV border-bottom?
+
+  <div id="myoutercontainer">
+	<div id="myinnercontainer">
+		<p>Hey look! I'm vertically centered!</p>
+		<p>How sweet is this?!</p>
+	</div>
+</div>
   
 </body>
 </html>
