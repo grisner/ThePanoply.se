@@ -6,58 +6,71 @@
   <meta charset="utf-8">
   <title>JS Bin</title>
 
-<style>
-    #mainHeaderWrapper{
-        
-        border-bottom: 2px solid #000;
-        position: relative;
-        
+    <style type="text/css">
+
+    body {
+        margin: 0%;
     }
-    #mainHeaderWrapper img{
-        /*vertical-align: middle;*/
-        height: 326px;
-        width: 100%; /* max width */
-        opacity: 0;  /* make it transparent */
+
+    #content {
+        margin: 8px;
+    }
+
+	#menu { 
+        background-color: #fe7405;
+        height: 70px;
+    }
+
+	#InnerContainer { 
+        /*background: url("http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg");*/
+        background: url("header-bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /*background-size: cover;*/
+        background-size: 100% 80%;
+        position:relative;
+        height: 300px;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    }
+
+    #HeaderContainer {
+        width: 100%;
+        position:absolute;
+        top:50%;
+        height:100px;
+        margin-top: -90px;        
+        text-transform: uppercase;
+        text-align: center;
     }
 
     h1 {
-        background: url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg') 50% / 100%;
-        text-align: center;
-        text-transform: uppercase;
-        position: absolute;
-        top: 50%;
-        /*margin-top: -5em;*/
-        
-        
-  
-        height: 370px;
+        font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-size: 72px;
+        font-weight: bold;
+
     }
 
-
-	#myoutercontainer { position:relative }
-	#myinnercontainer { position:absolute; top:50%; height:10em; margin-top:-5em }
 
 
 </style>
 
 </head>
 <body>
-
-
-
-  
-<div id="mainHeaderWrapper">
-   <!--<img src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/header-bg_zpsskqowbsd.jpg"><! I'm invisible! yey!-->
-   <h1>the panoply</h1>
+<div id="menu">
+    <p>menu</p>
 </div>
-  Notice the DIV border-bottom?
-
-  <div id="myoutercontainer">
-	<div id="myinnercontainer">
-		<p>Hey look! I'm vertically centered!</p>
-		<p>How sweet is this?!</p>
-	</div>
+<div id="InnerContainer">
+    <div id="HeaderContainer">
+        <h1>The Panoply</h1>
+    </div>
 </div>
-  
+
+
+<div id="content">
+
+    <p>tets</p>
+
+</div>
 </body>
 </html>
