@@ -10,6 +10,7 @@
 
     body {
         margin: 0%;
+        
     }
 
     #content {
@@ -19,6 +20,7 @@
 	#menu { 
         background-color: #fe7405;
         height: 70px;
+        margin: 0 0 0 0;
     }
 
 	#InnerContainer { 
@@ -26,12 +28,14 @@
         background: url("header-bg.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        /*background-size: cover;*/
-        background-size: 100% 80%;
+        background-size: 100% 60%;
+        
+        background-position: 0% -20%;
         position:relative;
-        height: 300px;
-        border-top: 2px solid;
-        border-bottom: 2px solid;
+        height: 320px;
+        
+        /*border-top: 2px solid;*/
+        /*border-bottom: 2px solid;*/
     }
 
     #HeaderContainer {
@@ -45,9 +49,9 @@
     }
 
     h1 {
-        font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
-        font-size: 72px;
-        font-weight: bold;
+        font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+        font-size: 70px;
+        font-weight: 700;
 
     }
 
@@ -56,21 +60,18 @@
 </style>
 
 </head>
-<body>
-<div id="menu">
-    <p>menu</p>
-</div>
-<div id="InnerContainer">
-    <div id="HeaderContainer">
-        <h1>The Panoply</h1>
+    <body>
+    <div id="InnerContainer">
+        <div id="HeaderContainer">
+            <h1>The Panoply</h1>
+        </div>
     </div>
-</div>
 
 
-<div id="content">
+    <div id="content">
 
-    <p>tets</p>
+        <p>tets</p>
 
-</div>
+    </div>
 </body>
 </html>
