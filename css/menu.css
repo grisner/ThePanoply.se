@@ -1,6 +1,40 @@
+#navWrap {
+    line-height: 60px;
+    
+    position: fixed;
+
+}
+
 #nav li {
-    float: left;
+    float: right;
     padding: 3px 8px;
     margin: 0 10px 0 0;
     list-style-type: none;
+    
+}
+
+#nav a {
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    color: rgb(255,255,255);
+}
+
+#header {
+    /*margin-right: 100px;*/
+    background-color: #fe7405;
+}
+
+body {
+    
+    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+    margin: 0%;
+
+}
+
+.container {
+    width: 90%;
 }
