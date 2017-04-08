@@ -51,6 +51,7 @@
     background-color: #fe7405;
     color: #FFF;
     list-style-type: none;
+<<<<<<< HEAD
     text-transform: uppercase;   
     letter-spacing: 1px; 
 }
@@ -94,3 +95,12 @@ br.clearLeft {
         
     }
 }
+=======
+	
+}
+
+#navWrap {
+    background-color: #feaa88;
+	
+}
+>>>>>>> 481dc930d5f4c49b3742bd6b45c00e5eb24037ed
