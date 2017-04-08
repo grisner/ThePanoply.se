@@ -8,6 +8,7 @@
 #wrap {
     background: #666;
     padding: 10px;
+    
 }
 
 #menu {
@@ -33,7 +34,8 @@
 #nav {
     padding-top: 15px;
     padding-right: 10px;
-    background: #fe7405;   
+    background: #fe7405; 
+    z-index:10;  
 }
 
 #nav ul {
