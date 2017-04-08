@@ -29,13 +29,21 @@
 #navWrap {
     line-height: 50px;
     padding: 0 5% 0 5%;
+    background: #fe7405; 
 }
 
 #nav {
     padding-top: 15px;
     padding-right: 10px;
-    background: #fe7405; 
+    background-color: transparent;
     z-index:10;  
+}
+
+.scrolled {
+    padding-top: 15px;
+    padding-right: 10px;
+    background: #fe7405; 
+    z-index:10; 
 }
 
 #nav ul {
