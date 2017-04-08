@@ -18,7 +18,28 @@
 
         <!-- scripts -->
         <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-	  <script type='text/javascript' src='js/menu.js'></script>
+        <script type='text/javascript' src='js/in-view.js'></script>    
+        <script type='text/javascript' src='js/menu.js'></script>
+
+    <script type='text/javascript'>
+    jQuery(window).scroll(function(){
+        var fromTopPx = 200; // distance to trigger
+        var scrolledFromtop = jQuery(window).scrollTop();
+        if(scrolledFromtop > fromTopPx){
+            jQuery('nav').addClass('scrolled');
+            console.log('adding class');
+        }else{
+            jQuery('nav').removeClass('scrolled');
+            console.log('removing class');
+        }
+    });
+
+    /*var $target = $('.wrapper');
+    inView('.section').on('enter', function(el){
+      var color = $(el).attr('data-background-color');
+      $target.css('background-color', color );
+    });*/
+    </script>
 
         <style>
         #plugins {
