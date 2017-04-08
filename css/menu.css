@@ -1,40 +1,96 @@
-#navWrap {
-    line-height: 60px;
-    
-    position: fixed;
-
-}
-
-#nav li {
-    float: right;
-    padding: 3px 8px;
-    margin: 0 10px 0 0;
-    list-style-type: none;
-    
-}
-
-#nav a {
-    text-decoration: none;
-    font-weight: 400;
-    line-height: 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration-style: solid;
-    color: rgb(255,255,255);
-}
-
-#header {
-    /*margin-right: 100px;*/
-    background-color: #fe7405;
-}
-
-body {
-    
+   body {
+    background-color: #333;  
+    color: #999;
     font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
     margin: 0%;
+}
 
+#wrap {
+    background: #666;
+    padding: 10px;
+}
+
+#menu {
+    background-color: #666;
+    color: #FFF;
+}
+
+#logo {
+    font-size: 30px;  
+    line-height: 40px;    
+    padding: 5px;
 }
 
 .container {
-    width: 90%;
+    padding: 0 5% 0 5%;
+}
+
+#navWrap {
+    line-height: 50px;
+    padding: 0 5% 0 5%;
+}
+
+#nav {
+    padding-top: 15px;
+    padding-right: 10px;
+    background: #fe7405;   
+}
+
+#nav ul {
+    margin:0px;
+    padding: 0;    
+    float: right;
+}
+
+#nav li {    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    float: left;
+    padding: 15px 15px;
+    background-color: #fe7405;
+    color: #FFF;
+    list-style-type: none;
+    text-transform: uppercase;   
+    letter-spacing: 1px; 
+}
+
+#nav li a {
+    color: #FFF;  
+    text-decoration: none;   
+    line-height: 20px; 
+}
+
+#nav li a:hover {
+    text-decoration: underline;   
+}
+
+
+br.clearLeft {
+    clear: left;        
+}
+
+.bigNum {
+    font-size: 20px;
+    color: #000;
+    background: #FFF;
+    padding: 2px;    
+}
+
+@media (max-width: 760px) {}
+
+@media (min-width: 761px) and (max-width: 1499px) {
+    #nav {
+        width: 80%;
+        margin: auto;
+        /*margin:0 10% 0 10%;*/
+    }
+}
+
+@media (min-width: 1500px) {
+    #nav {
+        width: 1200px;
+        margin: auto;
+        
+    }
 }
