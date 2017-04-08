@@ -51,7 +51,7 @@
     background-color: #fe7405;
     color: #FFF;
     list-style-type: none;
-<<<<<<< HEAD
+
     text-transform: uppercase;   
     letter-spacing: 1px; 
 }
@@ -98,6 +98,6 @@ br.clearLeft {
 	
 
 #navWrap {
-    background-color: #feaa88;
+    /*background-color: #feaa88;*/
 	
 }
