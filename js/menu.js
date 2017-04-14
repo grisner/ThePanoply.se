@@ -9,14 +9,16 @@ $(window).load(function(){
 
 $(function() {
     // Stick the #nav to the top of the window
-    var nav = $('#nav');
+    var nav = $('#navWrap');
+    var li = $('#nav li');
     var navHomeY = nav.offset().top;
     var isFixed = false;
     var $w = $(window);
     $w.scroll(function() {
         var scrollTop = $w.scrollTop();
         var shouldBeFixed = scrollTop > navHomeY;
-        if (shouldBeFixed && !isFixed) {
+        
+            if (shouldBeFixed && !isFixed) {
             nav.css({
                 position: 'fixed',
                 top: 0,
@@ -28,13 +30,30 @@ $(function() {
         else if (!shouldBeFixed && isFixed)
         {
             nav.css({
-                position: 'static'
+                position: 'static',
+                left: nav.offset().left,
+                width: nav.width()
             });
             isFixed = false;
         }
     });
 });
 
+
+$(window).scroll(function(){
+    var fromTopPx = 190; // distance to trigger
+    var scrolledFromtop = $(window).scrollTop();
+
+    if(scrolledFromtop > fromTopPx && (!$('#nav').hasClass('scrolled'))) {
+        $('#nav').addClass('scrolled');
+        $('nav li').addClass('liScrolled');
+        
+    }else if(scrolledFromtop < fromTopPx && $('#nav').hasClass('scrolled')) {
+        $('#nav').removeClass('scrolled');
+        $('nav li').removeClass('liScrolled');
+        
+    }
+});
 
 /**
 ************************************************************

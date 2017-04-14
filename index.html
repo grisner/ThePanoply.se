@@ -18,21 +18,11 @@
 
         <!-- scripts -->
         <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-        <script type='text/javascript' src='js/in-view.js'></script>    
+        <script type='text/javascript' src='js/in-view.min.js'></script>    
         <script type='text/javascript' src='js/menu.js'></script>
 
     <script type='text/javascript'>
-    jQuery(window).scroll(function(){
-        var fromTopPx = 200; // distance to trigger
-        var scrolledFromtop = jQuery(window).scrollTop();
-        if(scrolledFromtop > fromTopPx){
-            jQuery('nav').addClass('scrolled');
-            console.log('adding class');
-        }else{
-            jQuery('nav').removeClass('scrolled');
-            console.log('removing class');
-        }
-    });
+    
 
     /*var $target = $('.wrapper');
     inView('.section').on('enter', function(el){
@@ -64,32 +54,35 @@
 <body>
 
 <!-- page header -->
-
+<div id="wrap">
   <div id="menu">
-    <div id="navWrap" class="container">
-        <div id="nav">
-            <ul>
-                <li><a href="#1" class="smoothScroll">hem</a></li>
-                <li><a href="#2" class="smoothScroll">om</a></li>
-                <li><a href="#3" class="smoothScroll">flöde</a></li>
-                <li><a href="#4" class="smoothScroll">kontakt</a></li>
-            </ul>    
-            <br class="clearLeft" />
+    <div id="InnerContainer">
+        <div id="navWrap" class="container">
+            <div id="nav">
+                <ul>
+                    <li><a href="#1" class="smoothScroll">hem</a></li>
+                    <li><a href="#2" class="smoothScroll">om</a></li>
+                    <li><a href="#3" class="smoothScroll">flöde</a></li>
+                    <li><a href="#4" class="smoothScroll">kontakt</a></li>
+                </ul>    
+                <br class="clearLeft" />
+            </div>
+        </div>
+    
+    
+    
+        <div id="HeaderContainer">
+            <h1>The Panoply</h1>
         </div>
     </div>
-    
-      <div id="InnerContainer">
-  <div id="HeaderContainer">
-      <h1>The Panoply</h1>
-  </div>
 </div>
-  </div>
+</div>
 <!-- /#page-header -->
 
 
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br />dfghdfgh<br /><br /><br />dgfhdfgh<br /><br /><br /><br />dghdgh<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />dfghdfgh<br /><br /><br /><br /><br /><br />dfghdfgh<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <p>ENDE</p>
 

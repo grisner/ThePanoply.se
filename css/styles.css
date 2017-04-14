@@ -3,12 +3,12 @@
    font: 12px/1.4em Arial,sans-serif;
 }
 */
-#wrap {
+/*#wrap {
    margin: 10px auto;        
    background: #666;
    padding: 10px;
-   width: 700px;
-}
+   /*width: 700px;*/
+}*/
 
 
 /*#logo {
@@ -16,9 +16,7 @@
    line-height: 40px;    
    padding: 5px;
 }*/
-#navWrap {
-   height: 30px;
-}
+
 #nav {
    padding: 5px;
    background-color: #fe7405;    
