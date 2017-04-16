@@ -9,51 +9,120 @@ $(window).load(function(){
 
 $(function() {
     // Stick the #nav to the top of the window
-    var nav = $('#navWrap');
-    var li = $('#nav li');
-    var navHomeY = nav.offset().top;
-    var isFixed = false;
-    var $w = $(window);
-    $w.scroll(function() {
-        var scrollTop = $w.scrollTop();
-        var shouldBeFixed = scrollTop > navHomeY;
+    var navWrap = $('#navWrap');
+    var navHomeY = navWrap.offset().top;
+    var isOnHeader = false;
+    var isOnTop = false;
+    var isLeavingHeader = false;
+    var isInContent = false;
+    var headerHeightPx = 200; // distance to trigger
+    var leavingHeaderHeight = headerHeightPx + $('#navWrap').height();
+
+    $(window).scroll(function() {
+        // on all scrolling
         
-            if (shouldBeFixed && !isFixed) {
-            nav.css({
+
+        // var scrollTop = $(window).scrollTop();
+        var scrolledFromTop = $(window).scrollTop();
+        var onHeader = scrolledFromTop > navHomeY + 4 && scrolledFromTop < headerHeightPx;
+        var onTop = scrolledFromTop < navHomeY + 4;
+        var leavingHeader = scrolledFromTop > headerHeightPx && scrolledFromTop < leavingHeaderHeight;
+        var inContent = scrolledFromTop > leavingHeaderHeight;
+        /*
+        console.log(scrolledFromTop);
+        console.log("top:" + onTop);
+        console.log("istop:" + isOnTop);
+        console.log("header:" + onHeader);
+        console.log("isheader:" + isOnHeader);
+        console.log("leaving:" + leavingHeader);
+        console.log("isleaving:" + isLeavingHeader);
+        console.log("content:" + inContent);
+        console.log("iscontent:" + isInContent);
+        */
+        
+        if (onTop && !isOnTop)
+        {
+            console.log('Top');
+            /*navWrap.css({
+                position: 'static'
+            });*/
+
+            $('#navWrap').removeClass('navWrapLeavingHeader');
+            $('#navWrap').removeClass('navWrapContent');
+            $('#navWrap').removeClass('navWrapOnHeader');
+            $('#navWrap').addClass('navWrapOnTop');
+
+            isOnHeader = false;
+            isLeavingHeader = false;
+            isInContent = false;
+            isOnTop = true;
+        }
+        else if (onHeader && !isOnHeader) {
+            console.log('on header');
+
+            $('#navWrap').removeClass('navWrapOnTop');
+            $('#navWrap').removeClass('navWrapLeavingHeader');
+            $('#navWrap').removeClass('navWrapContent');
+            $('#navWrap').addClass('navWrapOnHeader');
+            /*
+            navWrap.css({
                 position: 'fixed',
                 top: 0,
-                left: nav.offset().left,
-                width: nav.width()
-            });
-            isFixed = true;
+                left: navWrap.offset().left,
+                width: navWrap.width()
+            });*/
+            isOnHeader = true;
+            isOnTop = false;
+            isLeavingHeader = false;
         }
-        else if (!shouldBeFixed && isFixed)
-        {
-            nav.css({
-                position: 'static',
-                left: nav.offset().left,
-                width: nav.width()
-            });
-            isFixed = false;
+        
+        else if(leavingHeader && !isLeavingHeader) {
+            console.log('leaving header');
+
+            $('#navWrap').removeClass('navWrapOnTop');
+            $('#navWrap').removeClass('navWrapOnHeader');
+            $('#navWrap').removeClass('navWrapContent');
+            $('#navWrap').addClass('navWrapLeavingHeader');
+
+            isLeavingHeader = true;
+            isOnHeader = false;
+            isInContent = false;
         }
+        else if(inContent && !isInContent) {
+            console.log('entering content');
+
+            //$('#navWrap').addClass('scrolled');
+            //$('nav li').addClass('liScrolled');
+            
+            $('#navWrap').removeClass('navWrapOnTop');
+            $('#navWrap').removeClass('navWrapOnHeader');
+            $('#navWrap').removeClass('navWrapLeavingHeader');
+            $('#navWrap').addClass('navWrapContent');
+
+            isInContent = true;
+            isLeavingHeader = false;
+        }
+
+        
+
+
+        /*
+        if(scrolledFromTop > headerHeightPx && (!$('#navWrap').hasClass('navWrap.Content'))) {
+            
+            
+            
+            
+
+        }else if(scrolledFromTop < headerHeightPx && $('#navWrap').hasClass('navWrap.Content')) {
+            $('#navWrap').removeClass('scrolled');
+            //$('nav li').removeClass('liScrolled');
+            $('#navWrap').removeClass('navWrap.Content');
+            console.log('entering header');
+        }*/
     });
 });
 
 
-$(window).scroll(function(){
-    var fromTopPx = 190; // distance to trigger
-    var scrolledFromtop = $(window).scrollTop();
-
-    if(scrolledFromtop > fromTopPx && (!$('#nav').hasClass('scrolled'))) {
-        $('#nav').addClass('scrolled');
-        $('nav li').addClass('liScrolled');
-        
-    }else if(scrolledFromtop < fromTopPx && $('#nav').hasClass('scrolled')) {
-        $('#nav').removeClass('scrolled');
-        $('nav li').removeClass('liScrolled');
-        
-    }
-});
 
 /**
 ************************************************************

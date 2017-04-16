@@ -24,21 +24,26 @@
 #navWrap {
     line-height: 50px;
     padding: 0 5% 0 5%;
-    background-color: transparent;
+    width: 100%;
+    align-content: center;
+    /*background-color: transparent;*/
+    background-color: #044;
     z-index:10;  
+    position: fixed;
+    /*top: 0;*/
+}
+
+.navWrapScrolled {
+    position: fixed;
+    /*top: 0;*/
 }
 
 #nav {
     padding-top: 30px;
-    padding-right: 10px;
-    /*background: #fff; */
+    /*padding-right: 10px;*/
+    background: #f0f;
     /*background: #fe7405; */
     
-}
-
-.navWrapScrolled {
-    position: 'fixed';
-    top: 0;
 }
 
 .scrolled {
@@ -48,9 +53,9 @@
     z-index:10; 
 }
 
-.navWrapBelowHeader {
+/*.navWrapBelowHeader {
     background: #aa0;
-}
+}*/
 
 #nav ul {
     margin:0px;
@@ -117,6 +122,11 @@ br.clearLeft {
         margin: auto;
         /*margin:0 10% 0 10%;*/
     }
+
+    #navWrap {
+        /*width: 80%;*/
+        align-content: center;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -128,7 +138,7 @@ br.clearLeft {
 }
 	
 
-#navWrap {
-    /*background-color: #feaa88;*/
+/*#navWrap {
+    background-color: #feaa88;
 	
-}
+}*/

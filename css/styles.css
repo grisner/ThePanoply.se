@@ -1,51 +1,162 @@
-/*body {
-   
-   font: 12px/1.4em Arial,sans-serif;
+body {
+    margin: 0%;
+    
 }
-*/
-/*#wrap {
-   margin: 10px auto;        
-   background: #666;
-   padding: 10px;
-   /*width: 700px;*/
-}*/
 
+#content {
+    margin: 8px;
+}
 
-/*#logo {
-   font-size: 30px;  
-   line-height: 40px;    
-   padding: 5px;
-}*/
+/* HEADER */
+#InnerContainer { 
+    background: url("../header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% -20%;
+    position:relative;
+    height: 320px;
+    margin: 0%;
+    
+}
+
+#HeaderContainer {
+    width: 100%;
+    position:absolute;
+    top:50%;
+    height:100px;
+    margin-top: -90px;        
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#logo {
+    font-size: 30px;  
+    line-height: 40px;    
+    padding: 5px;
+}
+/* /HEADER */
+
+/* MENU */
+#menu {
+    /*background-color: #fe7405;*/
+    background-color: #777;
+    color: #FFF;
+}
+
+#wrap {
+    background: #222;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.container {
+    padding: 0 5% 0 5%;
+    width: 85%;
+}
+
+#navWrap {
+    line-height: 50px;
+    /*background-color: transparent;*/
+    z-index:10;  
+}
+
+.navWrapOnTop {
+    /*background-color: transparent;*/
+    background-color: #04a;
+    align-content: center;
+    position: fixed;
+}
+
+.navWrapOnHeader {
+    /*background-color: transparent;*/
+    background-color: #0f4;
+    align-content: center;
+    position: fixed;
+}
+
+.navWrapLeavingHeader {
+    background-color: #f0a;
+    align-content: center;
+    position: static;
+}
+
+.navWrapContent {
+    /*background-color: #fe7405;*/
+    background-color: #090;
+    align-content: center;
+    padding-top: 0px;
+    top: 0;
+    position: fixed;
+    /*z-index:10; */
+
+}
+
+.navWrapScrolled {
+    position: fixed;
+    /*top: 0;*/
+}
 
 #nav {
-   padding: 5px;
-   background-color: #fe7405;    
+    padding: 5px;
+    padding-top: 30px;
+    /*padding-right: 10px;*/
+    /*background: #f0f;*/
+    background-color: transparent;
+    
+        
 }
+
 #nav ul {
-   margin: 0;
-   padding: 0;    
+    margin: 0;
+    padding: 0;    
+    float: right;
 }
 #nav li {
-   float: left;
-   padding: 3px 8px;
-   background-color: #fe7405;
-   margin: 0 10px 0 0;
-   color: fe7405;
-   list-style-type: none;
+    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    float: left;
+    /*padding: 3px 8px;*/
+    padding: 10px 10px;
+    background-color: transparent;
+    color: #FFF;
+    list-style-type: none;
+    text-transform: uppercase;   
+    letter-spacing: 1px; 
+    margin: 0 10px 0 0;
+    list-style-type: none;
 }
 #nav li a {
-   color: #fff;  
-   text-decoration: none;    
+    color: #FFF;  
+    text-decoration: none; 
+    line-height: 20px;    
 }
 #nav li a:hover {
-   text-decoration: underline;   
+   color: #000;
 }
+
+.bigNum {
+    font-size: 20px;
+    color: #000;
+    background: #FFF;
+    padding: 2px;    
+}
+
+/* /MENU */
+
 br.clearLeft {
    clear: left;        
 }​
 a:active {
-  
-  font-weight: bold
+  color: #a0a;
+  font-weight: bold;
 }
 
 .divider {  
@@ -56,9 +167,9 @@ a:active {
 }
 
 @media (max-width:1049px) {	
-	.row {
+	/*.row {
 
-	}
+	}*/
 	#fb-root, #oursound-root {
 		display:block;
 		margin:auto;
@@ -72,5 +183,26 @@ a:active {
 	}
 }
 
-*/
+@media (max-width: 760px) {}
+
+@media (min-width: 761px) and (max-width: 1499px) {
+    #nav {
+        width: 80%;
+        margin: auto;
+        /*margin:0 10% 0 10%;*/
+    }
+
+    #navWrap {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    #nav {
+        width: 1200px;
+        margin: auto;
+        
+    }
+}
 
