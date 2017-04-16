@@ -15,7 +15,7 @@ $(function() {
     var isOnTop = false;
     var isLeavingHeader = false;
     var isInContent = false;
-    var headerHeightPx = 200; // distance to trigger
+    var headerHeightPx = 190; // distance to trigger
     var leavingHeaderHeight = headerHeightPx + $('#navWrap').height();
 
     $(window).scroll(function() {
@@ -52,6 +52,9 @@ $(function() {
             $('#navWrap').removeClass('navWrapOnHeader');
             $('#navWrap').addClass('navWrapOnTop');
 
+            $('#nav').removeClass('navInContent');
+            $('#nav').addClass('navOnHeader');
+
             isOnHeader = false;
             isLeavingHeader = false;
             isInContent = false;
@@ -64,6 +67,10 @@ $(function() {
             $('#navWrap').removeClass('navWrapLeavingHeader');
             $('#navWrap').removeClass('navWrapContent');
             $('#navWrap').addClass('navWrapOnHeader');
+
+            $('#nav').removeClass('navInContent');
+            $('#nav').addClass('navOnHeader');
+
             /*
             navWrap.css({
                 position: 'fixed',
@@ -84,6 +91,9 @@ $(function() {
             $('#navWrap').removeClass('navWrapContent');
             $('#navWrap').addClass('navWrapLeavingHeader');
 
+            $('#nav').removeClass('navOnHeader');
+            $('#nav').addClass('navInContent');
+
             isLeavingHeader = true;
             isOnHeader = false;
             isInContent = false;
@@ -98,6 +108,9 @@ $(function() {
             $('#navWrap').removeClass('navWrapOnHeader');
             $('#navWrap').removeClass('navWrapLeavingHeader');
             $('#navWrap').addClass('navWrapContent');
+
+            $('#nav').removeClass('navOnHeader');
+            $('#nav').addClass('navInContent');
 
             isInContent = true;
             isLeavingHeader = false;

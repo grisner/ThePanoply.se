@@ -33,6 +33,7 @@ h1 {
     font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
     font-size: 70px;
     font-weight: 700;
+    color: black;
 }
 
 #logo {
@@ -52,29 +53,52 @@ h1 {
 #wrap {
     background: #222;
     padding: 0px 0px 0px 0px;
-    
 }
 
 .container {
     padding: 0 5% 0 5%;
-    width: 85%;
+    width: 90%;
 }
 
 #navWrap {
     line-height: 50px;
-    /*background-color: transparent;*/
-    z-index:10;  
+    z-index:10; 
 }
 
 .navWrapOnTop {
-    /*background-color: transparent;*/
+    background-color: transparent;
+    position: fixed;
+}
+
+.navWrapOnHeader {
+    background-color: transparent;
+    position: fixed;
+}
+
+.navWrapLeavingHeader {
+    background-color: #fe7405;
+    position: fixed;
+}
+
+.navWrapContent {
+    background-color: #fe7405;
+    position: fixed;
+}
+
+/*
+#navWrap {
+    line-height: 50px;
+    z-index:10;  
+}
+
+
+.navWrapOnTop {
     background-color: #04a;
     align-content: center;
     position: fixed;
 }
 
 .navWrapOnHeader {
-    /*background-color: transparent;*/
     background-color: #0f4;
     align-content: center;
     position: fixed;
@@ -87,29 +111,29 @@ h1 {
 }
 
 .navWrapContent {
-    /*background-color: #fe7405;*/
     background-color: #090;
     align-content: center;
     padding-top: 0px;
     top: 0;
     position: fixed;
-    /*z-index:10; */
-
 }
 
 .navWrapScrolled {
     position: fixed;
-    /*top: 0;*/
 }
+*/
 
 #nav {
-    padding: 5px;
+    /*padding: 5px;*/
+    background-color: transparent;    
+    transition-duration: 1s;
+}
+
+.navOnHeader {
     padding-top: 30px;
-    /*padding-right: 10px;*/
-    /*background: #f0f;*/
-    background-color: transparent;
-    
-        
+}
+.navInContent {
+    padding-top: 10px;
 }
 
 #nav ul {
@@ -123,7 +147,7 @@ h1 {
     font-weight: 400;
     line-height: 20px;
     float: left;
-    /*padding: 3px 8px;*/
+    
     padding: 10px 10px;
     background-color: transparent;
     color: #FFF;
@@ -183,18 +207,27 @@ a:active {
 	}
 }
 
-@media (max-width: 760px) {}
+@media (max-width: 760px) {
+    #nav {
+        width: 80%;
+        margin: auto;
+    }
+
+    #navWrap {
+        width: 100%;
+        margin: auto;
+    }
+}
 
 @media (min-width: 761px) and (max-width: 1499px) {
     #nav {
         width: 80%;
-        margin: auto;
-        /*margin:0 10% 0 10%;*/
+        margin-left: 5%;
     }
 
     #navWrap {
-        width: 80%;
-        margin: auto;
+        width: 100%;
+        
     }
 }
 
@@ -202,7 +235,11 @@ a:active {
     #nav {
         width: 1200px;
         margin: auto;
-        
+    }
+
+    #navWrap {
+        width: 100;;
+        margin: auto;
     }
 }
 
