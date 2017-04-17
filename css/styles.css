@@ -16,7 +16,6 @@ body {
     position:relative;
     height: 320px;
     margin: 0%;
-    
 }
 
 #HeaderContainer {
@@ -46,12 +45,11 @@ h1 {
 /* MENU */
 #menu {
     /*background-color: #fe7405;*/
-    background-color: #777;
     color: #FFF;
 }
 
 #wrap {
-    background: #222;
+    background: #fe7405;
     padding: 0px 0px 0px 0px;
 }
 
@@ -209,13 +207,21 @@ a:active {
 
 @media (max-width: 760px) {
     #nav {
-        width: 80%;
+        width: 95%;
         margin: auto;
+    }
+
+    #nav ul {
+        float: left;
     }
 
     #navWrap {
         width: 100%;
         margin: auto;
+    }
+
+    h1 {
+        color: white;
     }
 }
 
