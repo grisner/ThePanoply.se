@@ -1,5 +1,6 @@
 body {
     margin: 0%;
+    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
     
 }
 
@@ -60,7 +61,8 @@ h1 {
 
 #navWrap {
     line-height: 50px;
-    z-index:10; 
+    z-index:10;
+    position: fixed;
 }
 
 .navWrapOnTop {
@@ -102,7 +104,7 @@ h1 {
     float: right;
 }
 #nav li {
-    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+    
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -170,7 +172,7 @@ a:active {
     }
 
     #navWrap {
-        width: 100;;
+        width: 100%;
         margin: auto;
     }
 }
@@ -183,12 +185,18 @@ a:active {
 a img {
     display: inline;
     margin: auto;
-
+    width:32px;
+    height:32px;
+    border:0;
+    padding:5px;
 }
 
+
 .socneticon {
-    border: solid 2px;
-    align-content: center;
+    text-align: center;
+    display: inline-block;
+    margin:auto;
+    width: 20%;
 
 }
 
@@ -198,11 +206,11 @@ a img {
         margin: auto;
     }
 
-    .socneticon {
+    /*.socneticon {
         display: inline-block;
         margin:auto;
         width: 20%;
-    }
+    }*/
 }
 
 @media (min-width: 800px) and (max-width: 1099px) {
@@ -211,11 +219,11 @@ a img {
         margin: auto;
     }
 
-    .socneticon {
+    /*.socneticon {
         display: inline-block;
         margin:auto;
         width: 20%;
-    }
+    }*/
 }
 
 @media (max-width: 799px) {
@@ -224,14 +232,38 @@ a img {
         margin: auto;
     }
 
-    .socneticon {
+    /*.socneticon {
         display: inline-block;
         margin:auto;
         width: 20%;
-    }
+    }*/
+
 }
 
+
 /* /SocnetIcons */
+
+/* DIVIDERS */
+
+
+
+.divider {  
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  height: 200px;
+  padding: 20px;
+  text-transform: uppercase;
+
+}
+
+#AboutDivider {
+    background: url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/11163790_508440289315296_6116540000048146353_n_zps5whcchgz.jpg');
+}
+
+
+
+/* /DIVIDERS */
 
 .bigNum {
     font-size: 20px;
@@ -245,12 +277,7 @@ br.clearLeft {
 }​
 
 
-.divider {  
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  height: 200px;
-}
+
 
 @media (max-width:1049px) {	
 	/*.row {
