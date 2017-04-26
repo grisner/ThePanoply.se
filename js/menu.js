@@ -1,10 +1,9 @@
 
  
 $(window).load(function(){
+
 /**
-************************************************************
-*************** THIS IS THE NAVIGATION CODE ****************
-************************************************************
+THIS IS THE NAVIGATION CODE
 **/
 
 $(function() {
@@ -43,10 +42,7 @@ $(function() {
         if (onTop && !isOnTop)
         {
             console.log('Top');
-            /*navWrap.css({
-                position: 'static'
-            });*/
-
+            
             $('#navWrap').removeClass('navWrapLeavingHeader');
             $('#navWrap').removeClass('navWrapContent');
             $('#navWrap').removeClass('navWrapOnHeader');
@@ -71,13 +67,6 @@ $(function() {
             $('#nav').removeClass('navInContent');
             $('#nav').addClass('navOnHeader');
 
-            /*
-            navWrap.css({
-                position: 'fixed',
-                top: 0,
-                left: navWrap.offset().left,
-                width: navWrap.width()
-            });*/
             isOnHeader = true;
             isOnTop = false;
             isLeavingHeader = false;
@@ -98,12 +87,10 @@ $(function() {
             isOnHeader = false;
             isInContent = false;
         }
+
         else if(inContent && !isInContent) {
             console.log('entering content');
 
-            //$('#navWrap').addClass('scrolled');
-            //$('nav li').addClass('liScrolled');
-            
             $('#navWrap').removeClass('navWrapOnTop');
             $('#navWrap').removeClass('navWrapOnHeader');
             $('#navWrap').removeClass('navWrapLeavingHeader');
@@ -115,33 +102,14 @@ $(function() {
             isInContent = true;
             isLeavingHeader = false;
         }
-
-        
-
-
-        /*
-        if(scrolledFromTop > headerHeightPx && (!$('#navWrap').hasClass('navWrap.Content'))) {
-            
-            
-            
-            
-
-        }else if(scrolledFromTop < headerHeightPx && $('#navWrap').hasClass('navWrap.Content')) {
-            $('#navWrap').removeClass('scrolled');
-            //$('nav li').removeClass('liScrolled');
-            $('#navWrap').removeClass('navWrap.Content');
-            console.log('entering header');
-        }*/
     });
 });
 
 
 
 /**
-************************************************************
-*** THIS IS THE ADD-IN SMOOTH SCROLLING CODE ***************
-*** (see: http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-your-webpages/ )
-************************************************************
+THIS IS THE ADD-IN SMOOTH SCROLLING CODE
+(see: http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-your-webpages/ )
 **/
 
 
@@ -153,7 +121,6 @@ $(function() {
  * Date: 10-Sep-2012
  * Version: 1.0.1
  */
-if (!window['jQuery']) alert('The jQuery library must be included before the smoothscroll.js file.  The plugin will not work propery.');
 
 /**
  * jQuery.ScrollTo - Easy element scrolling using jQuery.

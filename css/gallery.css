@@ -19,6 +19,19 @@
 }
 
 .gallery {
-    align-content: center;
-    text-align: left;
+    /*align-content: center;*/
+    text-align: center;
+}
+
+@media (max-width:1299px) {	
+    .gallery {
+        width: 100%;
+    }
+}
+
+@media (min-width:1300px) {	
+    .gallery {
+        width: 1200px;
+        margin: auto;
+    }
 }
