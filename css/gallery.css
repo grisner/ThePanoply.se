@@ -7,7 +7,7 @@
 }
 
 .col-sm-3 {
-    width: 30%;
+    width: 28%;
     position: relative;
     float: left;
     padding: 0px 15px 0px 15px;
@@ -32,6 +32,20 @@
 @media (min-width:1300px) {	
     .gallery {
         width: 1200px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1450px) {
+    .gallery {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1449px) {
+    .gallery {
+        width: 90%;
         margin: auto;
     }
 }
