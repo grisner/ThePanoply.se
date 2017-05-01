@@ -1,7 +1,13 @@
-#SocNetRow {
-    width: 1000px;
+
+.socnet {
+    float: left;
     margin: auto;
 
+}
+
+#facebook-root {
+    width: 50%;
+    height: 700px;
 }
 
 #FacebookIframe {
@@ -9,13 +15,11 @@
     width: 100%;
     height: 700px;
     border: none;
-    overflow: hidden;
-    
 }
 
-#facebook-root {
-    display: flex;
-    
+
+#youtube-root {
+    width: 50%; 
     height: 700px;
     
 }
@@ -26,11 +30,6 @@
     
 }
 
-#youtube-root {
-     display: flex;
-    height: 700px;
-    
-}
 
 
 
