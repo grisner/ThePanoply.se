@@ -8,7 +8,7 @@ THIS IS THE NAVIGATION CODE
 
 $(function() {
     // Stick the #nav to the top of the window
-    var navWrap = $('#navWrap');
+    var navWrap = $('#NavWrap');
     var navHomeY = navWrap.offset().top;
     var isOnHeader = false;
     var isOnTop = false;
@@ -43,13 +43,13 @@ $(function() {
         {
             console.log('Top');
             
-            $('#navWrap').removeClass('navWrapLeavingHeader');
-            $('#navWrap').removeClass('navWrapContent');
-            $('#navWrap').removeClass('navWrapOnHeader');
-            $('#navWrap').addClass('navWrapOnTop');
+            $('#NavWrap').removeClass('navWrapLeavingHeader');
+            $('#NavWrap').removeClass('navWrapContent');
+            $('#NavWrap').removeClass('navWrapOnHeader');
+            $('#NavWrap').addClass('navWrapOnTop');
 
-            $('#nav').removeClass('navInContent');
-            $('#nav').addClass('navOnHeader');
+            $('#Nav').removeClass('navInContent');
+            $('#Nav').addClass('navOnHeader');
 
             isOnHeader = false;
             isLeavingHeader = false;
@@ -59,13 +59,13 @@ $(function() {
         else if (onHeader && !isOnHeader) {
             console.log('on header');
 
-            $('#navWrap').removeClass('navWrapOnTop');
-            $('#navWrap').removeClass('navWrapLeavingHeader');
-            $('#navWrap').removeClass('navWrapContent');
-            $('#navWrap').addClass('navWrapOnHeader');
+            $('#NavWrap').removeClass('navWrapOnTop');
+            $('#NavWrap').removeClass('navWrapLeavingHeader');
+            $('#NavWrap').removeClass('navWrapContent');
+            $('#NavWrap').addClass('navWrapOnHeader');
 
-            $('#nav').removeClass('navInContent');
-            $('#nav').addClass('navOnHeader');
+            $('#Nav').removeClass('navInContent');
+            $('#Nav').addClass('navOnHeader');
 
             isOnHeader = true;
             isOnTop = false;
@@ -75,13 +75,13 @@ $(function() {
         else if(leavingHeader && !isLeavingHeader) {
             console.log('leaving header');
 
-            $('#navWrap').removeClass('navWrapOnTop');
-            $('#navWrap').removeClass('navWrapOnHeader');
-            $('#navWrap').removeClass('navWrapContent');
-            $('#navWrap').addClass('navWrapLeavingHeader');
+            $('#NavWrap').removeClass('navWrapOnTop');
+            $('#NavWrap').removeClass('navWrapOnHeader');
+            $('#NavWrap').removeClass('navWrapContent');
+            $('#NavWrap').addClass('navWrapLeavingHeader');
 
-            $('#nav').removeClass('navOnHeader');
-            $('#nav').addClass('navInContent');
+            $('#Nav').removeClass('navOnHeader');
+            $('#Nav').addClass('navInContent');
 
             isLeavingHeader = true;
             isOnHeader = false;
@@ -91,13 +91,13 @@ $(function() {
         else if(inContent && !isInContent) {
             console.log('entering content');
 
-            $('#navWrap').removeClass('navWrapOnTop');
-            $('#navWrap').removeClass('navWrapOnHeader');
-            $('#navWrap').removeClass('navWrapLeavingHeader');
-            $('#navWrap').addClass('navWrapContent');
+            $('#NavWrap').removeClass('navWrapOnTop');
+            $('#NavWrap').removeClass('navWrapOnHeader');
+            $('#NavWrap').removeClass('navWrapLeavingHeader');
+            $('#NavWrap').addClass('navWrapContent');
 
-            $('#nav').removeClass('navOnHeader');
-            $('#nav').addClass('navInContent');
+            $('#Nav').removeClass('navOnHeader');
+            $('#Nav').addClass('navInContent');
 
             isInContent = true;
             isLeavingHeader = false;

@@ -2,32 +2,51 @@
 .socnet {
     float: left;
     margin: auto;
-
 }
 
-#facebook-root {
-    width: 50%;
-    height: 700px;
+.socnetiframe {
+    height: 700px;   
 }
 
-#FacebookIframe {
-    
-    width: 100%;
-    height: 700px;
-    border: none;
+#Facebook-Root {
+    text-align: right;
 }
 
-
-#youtube-root {
-    width: 50%; 
-    height: 700px;
-    
+#Youtube-Root {
+    text-align: left;
 }
 
-#YoutubeIframe {
-    width: 100%; 
-    height: 700px;
-    
+@media (min-width: 1000px) {
+    .socnetiframe {
+        width: 500px;
+    }
+
+    .socnet{
+        width: 50%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+ 
+    .socnetiframe {
+        width: 100%;
+    }
+
+    .socnet{
+        width: 42%;
+    }
+}
+
+@media (max-width: 499px) {
+    .socnetiframe {
+        width: 100%;
+    }
+
+    .socnet{
+        width: 85%;
+        margin: auto;
+    }
+
 }
 
 

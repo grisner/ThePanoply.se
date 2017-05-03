@@ -1,10 +1,10 @@
 
-#menu {
+#Menu {
     /*background-color: #fe7405;*/
     color: #FFF;
 }
 
-#wrap {
+#Wrap {
     background: #fe7405;
     padding: 0px 0px 0px 0px;
 }
@@ -14,7 +14,7 @@
     width: 90%;
 }
 
-#navWrap {
+#NavWrap {
     line-height: 50px;
     z-index:10;
     position: fixed;
@@ -40,7 +40,7 @@
     position: fixed;
 }
 
-#nav {
+#Nav {
     /*padding: 5px;*/
     background-color: transparent;    
     transition-duration: 1s;
@@ -53,12 +53,12 @@
     padding-top: 10px;
 }
 
-#nav ul {
+#Nav ul {
     margin: 0;
     padding: 0;    
     float: right;
 }
-#nav li {
+#Nav li {
     
     font-size: 14px;
     font-weight: 400;
@@ -74,12 +74,12 @@
     margin: 0 10px 0 0;
     list-style-type: none;
 }
-#nav li a {
+#Nav li a {
     color: #FFF;  
     text-decoration: none; 
     line-height: 20px;    
 }
-#nav li a:hover {
+#Nav li a:hover {
    color: #000;
 }
 
@@ -89,16 +89,16 @@ a:active {
 }
 
 @media (max-width: 760px) {
-    #nav {
+    #Nav {
         width: 95%;
         margin: auto;
     }
 
-    #nav ul {
+    #Nav ul {
         float: left;
     }
 
-    #navWrap {
+    #NavWrap {
         width: 100%;
         margin: auto;
     }
@@ -109,33 +109,28 @@ a:active {
 }
 
 @media (min-width: 761px) and (max-width: 1499px) {
-    #nav {
+    #Nav {
         width: 80%;
         margin-left: 5%;
     }
 
-    #navWrap {
+    #NavWrap {
         width: 100%;
         
     }
 }
 
 @media (min-width: 1500px) {
-    #nav {
+    #Nav {
         width: 1200px;
         margin: auto;
     }
 
-    #navWrap {
+    #NavWrap {
         width: 100%;
         margin: auto;
     }
 }
-
-
-
-
-
 
 /*
 #wrap {
