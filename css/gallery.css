@@ -7,7 +7,7 @@
 }
 
 .col-sm-3 {
-    width: 28%;
+    
     position: relative;
     float: left;
     padding: 0px 15px 0px 15px;
@@ -21,8 +21,9 @@
 .gallery {
     /*align-content: center;*/
     text-align: center;
+    margin-left: 8%;
 }
-
+/*
 @media (max-width:1299px) {	
     .gallery {
         width: 100%;
@@ -47,5 +48,51 @@
     .gallery {
         width: 90%;
         margin: auto;
+    }
+}
+*/
+
+@media (max-width: 699px) {
+    .gallery {
+        width: 85%;
+        margin: auto;
+        align-content: center;
+    }
+
+    .col-sm-3 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+    .gallery {
+        width: 90%;
+        margin: auto;
+    }
+
+    .col-sm-3 {
+        width: 28%;
+    }
+}
+
+@media (max-width: 1000px) and (max-width:1299px) {	
+    .gallery {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .col-sm-3 {
+        width: 28%;
+    }
+}
+
+@media (min-width:1300px) {	
+    .gallery {
+        width: 1200px;
+        margin: auto;
+    }
+    
+    .col-sm-3 {
+        width: 28%;
     }
 }
