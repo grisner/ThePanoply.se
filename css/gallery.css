@@ -7,15 +7,12 @@
 }
 
 .col-sm-3 {
-<<<<<<< HEAD
-    text-align: center;
-=======
 
     text-align: center;
 
-    
+    text-align: center;
 
->>>>>>> f710699444ba317ae60909b8fb1c4ab185ab12ad
+
     position: relative;
     float: left;
           padding: 1%;
@@ -33,10 +30,6 @@
     margin-left: 8%;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f710699444ba317ae60909b8fb1c4ab185ab12ad
 /*
 @media (max-width: 729px) {
     .col-sm-3 {
@@ -53,12 +46,6 @@
     }
 }*/
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> f710699444ba317ae60909b8fb1c4ab185ab12ad
 /*
 @media (max-width:1299px) {	
     .gallery {
@@ -87,8 +74,7 @@
     }
 }
 */
-<<<<<<< HEAD
-=======
+
 
 @media (max-width: 699px) {
     .gallery {
@@ -135,4 +121,3 @@
     }
 }
 
->>>>>>> f710699444ba317ae60909b8fb1c4ab185ab12ad
