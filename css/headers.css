@@ -1,12 +1,11 @@
-body {
+/*body {
     margin: 0%;
     
 }
 
 #content {
     margin: 8px;
-}
-
+}*/
 
 #InnerContainer { 
     background: url("../header-bg.jpg");
@@ -14,7 +13,7 @@ body {
     background-size: cover;
     background-position: 0% -20%;
     position:relative;
-    
+    margin: 0%;
 }
 
 #HeaderContainer {
@@ -29,23 +28,35 @@ body {
 
 h1 {
     font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
-    font-size: 70px;
     font-weight: 700;
+    color: black;
+}
+
+#Logo {
+    font-size: 30px;  
+    line-height: 40px;    
+    padding: 5px;
 }
 
 
-@media (max-width: 999px) {
+@media (max-width: 699px) {
     #InnerContainer {
         height: 200px;
     }
 
     h1 {
         font-size: 50px;
+        margin-top: 20%;
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
     #InnerContainer {
         height: 320px;
     }
+
+    h1 {
+        font-size: 70px;
+    }
 }
+[20170526 21:15:46.722] Disconnect: Is seed

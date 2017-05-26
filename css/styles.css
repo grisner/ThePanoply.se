@@ -8,40 +8,7 @@ body {
     margin: 8px;
 }
 
-/* HEADER */
-#InnerContainer { 
-    background: url("../header-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% -20%;
-    position:relative;
-    height: 320px;
-    margin: 0%;
-}
 
-#HeaderContainer {
-    width: 100%;
-    position:absolute;
-    top:50%;
-    height:100px;
-    margin-top: -90px;        
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h1 {
-    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
-    font-size: 70px;
-    font-weight: 700;
-    color: black;
-}
-
-#Logo {
-    font-size: 30px;  
-    line-height: 40px;    
-    padding: 5px;
-}
-/* /HEADER */
 
 /* MENU */
 
