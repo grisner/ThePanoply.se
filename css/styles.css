@@ -80,8 +80,6 @@ a img {
 
 /* DIVIDERS */
 
-
-
 .divider {  
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
@@ -90,11 +88,21 @@ a img {
   padding: 20px;
   padding-top: 60px;
   text-transform: uppercase;
+  /*z-index: -1;
+  position: fixed;*/
 
 }
 
 #AboutDivider {
-    background: url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/11163790_508440289315296_6116540000048146353_n_zps5whcchgz.jpg');
+    background: url('../images/dividers/aboutdivider.jpg');
+}
+
+#FBDivider {
+    background: url('../images/dividers/socnetdivider.png');
+}
+
+#ContactDivider {
+    background: url('../images/dividers/contactdivider.png');
 }
 
 
