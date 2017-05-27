@@ -39,7 +39,7 @@ h1 {
 }
 
 
-@media (max-width: 699px) {
+@media (min-width: 401px) and (max-width: 699px) {
     #InnerContainer {
         height: 200px;
     }
@@ -57,5 +57,16 @@ h1 {
 
     h1 {
         font-size: 70px;
+    }
+}
+
+@media (max-width: 400px) {
+    #InnerContainer {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 20%;
     }
 }
