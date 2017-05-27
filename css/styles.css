@@ -88,8 +88,8 @@ a img {
   padding: 20px;
   padding-top: 60px;
   text-transform: uppercase;
-  /*z-index: -1;
-  position: fixed;*/
+  z-index: -1;
+  /*position: fixed;*/
 
 }
 
