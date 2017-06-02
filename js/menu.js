@@ -6,6 +6,7 @@ $(window).load(function(){
 THIS IS THE NAVIGATION CODE
 **/
 
+/*
 $(function() {
     // Stick the #nav to the top of the window
     var navWrap = $('#NavWrap');
@@ -37,7 +38,7 @@ $(function() {
         console.log("isleaving:" + isLeavingHeader);
         console.log("content:" + inContent);
         console.log("iscontent:" + isInContent);
-        */
+        *
         
         if (onTop && !isOnTop)
         {
@@ -104,7 +105,7 @@ $(function() {
         }
     });
 });
-
+*/
 
 
 /**
