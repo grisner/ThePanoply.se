@@ -82,12 +82,12 @@
     list-style-type: none;
 }
 #Nav li a {
-    color: #FFF;  
+    color: black;  
     text-decoration: none; 
     line-height: 20px;    
 }
 #Nav li a:hover {
-   color: #000;
+   color: white;
 }
 
 a:active {
