@@ -2,8 +2,10 @@
  
 $(window).load(function(){
 
+    
+
 /**
-THIS IS THE NAVIGATION CODE
+THIS IS THE SCROLL CODE
 **/
 
 /*
