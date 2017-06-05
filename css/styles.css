@@ -50,10 +50,6 @@ a img {
     #SocnetIcons {
         width: 1000px;
     }
-
-    .divider {
-        height: 200px;
-    }
 }
 
 @media (min-width: 800px) and (max-width: 1099px) {
@@ -63,9 +59,6 @@ a img {
         width: 20%;
     }
 
-    .divider {
-        height: 200px;
-    }
 }
 
 @media (max-width: 799px) {
@@ -74,11 +67,6 @@ a img {
         margin:auto;
         width: 20%;
     }
-
-    .divider {
-        height: 200px;
-    }
-
 }
 
 @media (max-width: 1099px) {
@@ -99,6 +87,7 @@ a img {
   padding: 20px;
   padding-top: 60px;
   text-transform: uppercase;
+  height: 200px;
   /*z-index: -1;*/
   /*position: fixed;*/
 
