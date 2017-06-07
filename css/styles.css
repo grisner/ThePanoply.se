@@ -80,19 +80,6 @@ a img {
 
 /* DIVIDERS */
 
-.divider {  
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;  
-  padding: 20px;
-  padding-top: 60px;
-  text-transform: uppercase;
-  height: 125px;
-  /*z-index: -1;*/
-  /*position: fixed;*/
-
-}
-
 #AboutDivider {
     background: url('../images/dividers/aboutdivider.jpg');
 }
