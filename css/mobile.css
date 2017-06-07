@@ -4,15 +4,6 @@
   padding-top: 60px;
   text-transform: uppercase;
   height: 125px;
-
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-  z-index: -10;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important;  
 }
 
 /*
@@ -31,4 +22,16 @@
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
-}*/
+}
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  z-index: -10;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;  
+
+
+*/
