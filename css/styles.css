@@ -50,6 +50,10 @@ a img {
     #SocnetIcons {
         width: 1000px;
     }
+
+    .divider {
+        height: 200px;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1099px) {
@@ -59,6 +63,9 @@ a img {
         width: 20%;
     }
 
+    .divider {
+        height: 200px;
+    }
 }
 
 @media (max-width: 799px) {
@@ -67,6 +74,11 @@ a img {
         margin:auto;
         width: 20%;
     }
+
+    .divider {
+        height: 200px;
+    }
+
 }
 
 @media (max-width: 1099px) {
@@ -75,9 +87,22 @@ a img {
     }
 }
 
+
 /* /SocnetIcons */
 
 /* DIVIDERS */
+
+.divider {  
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;  
+  padding: 20px;
+  padding-top: 60px;
+  text-transform: uppercase;
+  /*z-index: -1;*/
+  /*position: fixed;*/
+
+}
 
 #AboutDivider {
     background: url('../images/dividers/aboutdivider.jpg');
