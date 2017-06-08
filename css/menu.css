@@ -90,12 +90,9 @@
    color: white;
 }
 
-#Nav li a:active {
-  color: #7F4F29;
-}
-
-.chosen {
-    color: #2A09B2;
+a:active {
+  color: #a0a;
+  font-weight: bold;
 }
 
 @media (max-width: 760px) {
