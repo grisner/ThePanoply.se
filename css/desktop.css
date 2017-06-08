@@ -1,0 +1,12 @@
+.divider {  
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;  
+  background-position: 0px 0px;
+  padding: 20px;
+  padding-top: 60px;
+  text-transform: uppercase;
+  height: 125px;
+  /*z-index: -1;*/
+  /*position: fixed;*/
+}
