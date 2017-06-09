@@ -1,9 +1,53 @@
 
+$(window).scroll(function() {
+    var scrolledFromTop = $(window).scrollTop();
+    var onAbout = $('#AboutDivider').offset().top;
+    var onSocnet = $('#FBDivider').offset().top;
+    var onContact = $('#ContactDivider').offset().top;
+
+    // adjust for menu click
+    var klick = 4;
+    
+    
+    if (scrolledFromTop < onAbout-klick) {
+        console.log('on header');
+
+        $('#Home').css('color','#2A09B2');
+        $('#About').css('color','#000');
+        $('#Socnet').css('color','#000');
+        $('#Contact').css('color','#000');
+    }
+    else if (scrolledFromTop > onAbout-klick && scrolledFromTop < onSocnet-klick) {
+        console.log('about');
+
+        $('#Home').css('color','#000');
+        $('#About').css('color','#2A09B2');
+        $('#Socnet').css('color','#000');
+        $('#Contact').css('color','#000');
+    }
+    else if (scrolledFromTop > onSocnet-klick && scrolledFromTop < onContact-klick) {
+        console.log('Socnet');
+        
+        $('#Home').css('color','#000');
+        $('#About').css('color','#000');
+        $('#Socnet').css('color','#2A09B2');
+        $('#Contact').css('color','#000'); 
+    }
+    else if (scrolledFromTop > onContact-klick) {
+        console.log('Contact');
+
+        $('#Home').css('color','#000');
+        $('#About').css('color','#000');
+        $('#Socnet').css('color','#000');
+        $('#Contact').css('color','#2A09B2');   
+    }
+
+});
  
 $(window).load(function(){
 
 /**
-THIS IS THE NAVIGATION CODE
+THIS IS THE SCROLL CODE
 **/
 
 /*

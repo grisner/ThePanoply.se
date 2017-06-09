@@ -82,17 +82,20 @@
     list-style-type: none;
 }
 #Nav li a {
-    color: #FFF;  
+    color: black;  
     text-decoration: none; 
     line-height: 20px;    
 }
 #Nav li a:hover {
-   color: #000;
+   color: white;
 }
 
-a:active {
-  color: #a0a;
-  font-weight: bold;
+#Nav li a:active {
+  color: #7F4F29;
+}
+
+.selected {
+    color: #2A09B2;
 }
 
 @media (max-width: 760px) {
