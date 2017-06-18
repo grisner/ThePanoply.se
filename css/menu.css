@@ -80,6 +80,12 @@
     letter-spacing: 1px; 
     margin: 0 10px 0 0;
     list-style-type: none;
+
+    text-shadow:
+        -1px -1px 0 #fe7405,
+        1px -1px 0 #fe7405,
+        -1px 1px 0 #fe7405,
+        1px 1px 0 #fe7405;
 }
 #Nav li a {
     color: black;  
