@@ -1,0 +1,72 @@
+/*body {
+    margin: 0%;
+    
+}
+
+#content {
+    margin: 8px;
+}*/
+
+#InnerContainer { 
+    background: url("../header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    position:relative;
+    margin: 0%;
+}
+
+#HeaderContainer {
+    width: 100%;
+    position:absolute;
+    top:50%;
+    height:100px;
+    margin-top: -90px;        
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+    font-weight: 700;
+    color: black;
+}
+
+#Logo {
+    font-size: 30px;  
+    line-height: 40px;    
+    padding: 5px;
+}
+
+
+@media (min-width: 401px) and (max-width: 699px) {
+    #InnerContainer {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 20%;
+    }
+}
+
+@media (min-width: 700px) {
+    #InnerContainer {
+        height: 320px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 400px) {
+    #InnerContainer {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 20%;
+    }
+}
