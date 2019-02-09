@@ -13,16 +13,16 @@
 }
 
 #Youtube-Root {
-    text-align: left;
+    text-align: center;
 }
 
 @media (min-width: 1000px) {
     .socnetiframe {
-        width: 500px;
+        width: 50%;
     }
 
     .socnet{
-        width: 50%;
+        width: 100%;
         margin: auto;
     }
 }
