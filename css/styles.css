@@ -4,6 +4,10 @@ body {
     
 }
 
+.introtext {
+    text-align: center;
+}
+
 #content {
     margin: 8px;
 }
