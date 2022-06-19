@@ -115,15 +115,18 @@ a img {
 }
 
 #AboutDivider {
-    background: url('../images/dividers/aboutdivider.jpg');
+    background: url('../images/dividers/aboutdivider.png');
+    background-position: center; 
 }
 
 #FBDivider {
     background: url('../images/dividers/socnetdivider.png');
+    background-position: center; 
 }
 
 #ContactDivider {
     background: url('../images/dividers/contactdivider.png');
+    background-position: center; 
 }
 
 
