@@ -8,7 +8,7 @@
 }*/
 
 #InnerContainer { 
-    background: url("../header-bg.jpg");
+/*    background: url("../header-bg.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 0%;
@@ -52,7 +52,7 @@ h1 {
 
 @media (min-width: 700px) {
     #InnerContainer {
-        height: 320px;
+        height: 115px;
     }
 
     h1 {
