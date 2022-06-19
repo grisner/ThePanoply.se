@@ -1,3 +1,17 @@
+function highlight(target) {
+    menu = ['Home', 'About', 'Socnet', 'Contact'];
+    for (let item of menu) {
+        let query = '#' + item;
+        if (item === target) {
+            $(query).css('color','#2A09B2');
+            $(query).css('font-weight','bold');
+        }
+        else {
+            $(query).css('color','#000');
+            $(query).css('font-weight','normal');
+        }
+    }
+}
 
 $(window).scroll(function() {
     var scrolledFromTop = $(window).scrollTop();
@@ -8,38 +22,21 @@ $(window).scroll(function() {
     // adjust for menu click
     var klick = 4;
     
-    
     if (scrolledFromTop < onAbout-klick) {
         console.log('on header');
-
-        $('#Home').css('color','#2A09B2');
-        $('#About').css('color','#000');
-        $('#Socnet').css('color','#000');
-        $('#Contact').css('color','#000');
+        highlight('Home');
     }
     else if (scrolledFromTop > onAbout-klick && scrolledFromTop < onSocnet-klick) {
         console.log('about');
-
-        $('#Home').css('color','#000');
-        $('#About').css('color','#2A09B2');
-        $('#Socnet').css('color','#000');
-        $('#Contact').css('color','#000');
+        highlight('About');
     }
     else if (scrolledFromTop > onSocnet-klick && scrolledFromTop < onContact-klick) {
         console.log('Socnet');
-        
-        $('#Home').css('color','#000');
-        $('#About').css('color','#000');
-        $('#Socnet').css('color','#2A09B2');
-        $('#Contact').css('color','#000'); 
+        highlight('Socnet');
     }
     else if (scrolledFromTop > onContact-klick) {
         console.log('Contact');
-
-        $('#Home').css('color','#000');
-        $('#About').css('color','#000');
-        $('#Socnet').css('color','#000');
-        $('#Contact').css('color','#2A09B2');   
+        highlight('Contact');
     }
 
 });
