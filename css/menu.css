@@ -1,3 +1,7 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 #Menu {
     /*background-color: #fe7405;*/
@@ -20,10 +24,10 @@
     position: fixed;
 
     background: #fe7405; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#fe7405, rgba(254,116,5,0)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#fe7405, rgba(254,116,5,0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#fe7405, rgba(254,116,5,0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fe7405, rgba(254,116,5,0)); /* Standard syntax */
+/*    background: -webkit-linear-gradient(#fe7405, rgba(254,116,5,0)); /* For Safari 5.1 to 6.0 */
+/*    background: -o-linear-gradient(#fe7405, rgba(254,116,5,0)); /* For Opera 11.1 to 12.0 */
+/*    background: -moz-linear-gradient(#fe7405, rgba(254,116,5,0)); /* For Firefox 3.6 to 15 */
+/*    background: linear-gradient(#fe7405, rgba(254,116,5,0)); /* Standard syntax */
 
 }
 
@@ -54,7 +58,7 @@
 }
 
 .navOnHeader {
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .navInContent {
     padding-top: 10px;
@@ -63,7 +67,7 @@
 #Nav ul {
     margin: 0;
     padding: 0;    
-    float: right;
+    float: center;
 }
 #Nav li {
     
@@ -82,11 +86,11 @@
     list-style-type: none;
 
 
-    text-shadow:
+    /* text-shadow:
         -1px -1px 0 #fff,
         1px -1px 0 #fff,
         -1px 1px 0 #fff,
-        1px 1px 0 #fff;
+        1px 1px 0 #fff; */
 }
 #Nav li a {
     color: black;  
