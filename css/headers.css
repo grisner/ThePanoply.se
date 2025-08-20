@@ -1,36 +1,15 @@
-    body {
-        margin: 0%;
-        
-    }
+#Hem { 
+    position: relative;
+    height: 166px;
+    z-index: 10;
+}
 
-    #content {
-        margin: 8px;
-    }
+h1 {
+    font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+    font-weight: 700;
+    color: black;
+}
 
-
-	#InnerContainer { 
-        background: url("../header-bg.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0% -20%;
-        position:relative;
-        height: 320px;
-        
-    }
-
-    #HeaderContainer {
-        width: 100%;
-        position:absolute;
-        top:50%;
-        height:100px;
-        margin-top: -90px;        
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    h1 {
-        font-family:   sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
-        font-size: 70px;
-        font-weight: 700;
-    }
-
+p.nav {
+    min-height: 73px;
+}

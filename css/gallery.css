@@ -1,24 +1,10 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
 
 .img-responsive {
-    display: block;
-    max-width: 100%;
+    width: auto;
     height: auto;
-    display: block;
-}
-
-.col-sm-3 {
-    width: 30%;
-    position: relative;
-    float: left;
-    padding: 0px 15px 0px 15px;
-    margin: auto;
-}
-
-.face {
-    width: 280px;
-}
-
-.gallery {
-    align-content: center;
-    text-align: left;
 }

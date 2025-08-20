@@ -1,176 +1,137 @@
 <!DOCTYPE html> 
 <html lang="sv">
     <head>
-        <meta charset="UTF-8" />
         
-        <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="shortcut icon" href="http://prod-thepanoply.rhcloud.com/sites/default/files/ThePanoplyLoggav2.72_72_0.jpg" type="image/jpeg" />
+        <meta content="text/html" charset="utf-8" />
+        <meta name="description" content="The Panoply Steelband är en oljefatsorkester från Södertälje med bred repertoar som sätter tempot på evenemang och fester." />
+        <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+        <link rel="icon" href="images/loggor/thepanoply.png" type="image/jpeg" />
 
-        <title>The Panoply </title>
+        <title>The Panoply Steelband</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thepanoply.se/" />
+        <meta property="og:title" content="The Panoply - Boka oljefatsmusik till ditt evenemang!" />
+        <meta property="og:description" content="The Panoply Steelband underhåller med fartfylld musik på event, fester, konserter, festivaler, med mera!" />
+        <meta property="og:image" content="https://thepanoply.se/images/the_panoply.png" />
 
         <!-- stylesheets -->
 	    <link href="css/styles.css" rel="stylesheet" />
-        <!-- <link href="css/menu.css" rel="stylesheet" /> -->
-        <!-- <link href="css/headers.css" rel="stylesheet" /> -->
+        <link href="css/menu.css" rel="stylesheet" />
+        <link href="css/headers.css" rel="stylesheet" />
         <link href="css/gallery.css" rel="stylesheet" />
-	   
-
-        <!-- scripts -->
-        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-        <script type='text/javascript' src='js/in-view.min.js'></script>    
-        <script type='text/javascript' src='js/menu.js'></script>
-
-    <script type='text/javascript'>
-    
-
-    /*var $target = $('.wrapper');
-    inView('.section').on('enter', function(el){
-      var color = $(el).attr('data-background-color');
-      $target.css('background-color', color );
-    });*/
-    </script>
-
-        <style>
-        #plugins {
-            background-color: white;
-            background-size: cover;
-            -moz-background-size: cover
-        }
-        </style>
+        <link href="css/socnet.css" rel="stylesheet" />
+        <link href="css/contact.css" rel="stylesheet" />
 
     </head>
-<!--
-  <script>
-// Facebook script
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=591696517649366";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>-->
 <body>
 
-<!-- page header -->
-<div id="wrap">
-    <div id="menu">
-        <div id="InnerContainer">
-            <div id="navWrap" class="container">
-                <div id="nav" class="navOnHeader">
-                    <ul>
-                        <li><a href="#1" class="smoothScroll">home</a></li>
-                        <li><a href="#2" class="smoothScroll">om</a></li>
-                        <li><a href="#3" class="smoothScroll">flöde</a></li>
-                        <li><a href="#4" class="smoothScroll">kontakt</a></li>
-                    </ul>    
-                    <br class="clearLeft" />
-                </div>
-            </div>
-
-            <div id="HeaderContainer">
-                <h1>The Panoply</h1>
+    <!-- Page header -->
+    <div id="Hem">
+        <div id="NavWrap" class="container">
+            <div id="Nav" class="navOnHeader">
+                <p class="nav"><img src="images/the_panoply_header.svg" alt="The Panoply"/></p>
+                <ul>
+                    <li><a id="Home" href="#Hem" class="smoothScroll">hem</a></li>
+                    <li><a id="About" href="#OmBandet" class="smoothScroll">om</a></li>
+                    <li><a id="Socnet" href="#Videor" class="smoothScroll">videor</a></li>
+                    <li><a id="Contact" href="#Boka" class="smoothScroll">boka</a></li>
+                </ul>
+                <br class="clearLeft" />
             </div>
         </div>
     </div>
-</div>
 
-<section id="SocnetIcons">
-    <div class="row socnet">
-        <a class="socneticon" href="https://soundcloud.com/the-panoply-steelband" target="_top">
-            <img src="https://image.freepik.com/free-icon/soundcloud-logo_318-64720.png"> <!-- style="width:41px;height:41px;border:0;padding:5px"-->
-        </a>
-        <a class="socneticon" href="https://www.youtube.com/user/thepanoplysteelband" target="_top">
-            <img src="https://image.freepik.com/free-icon/youtube-logo_318-76452.png"> <!-- style="width:41px;height:41px;border:0;padding:5px"-->
-        </a>
-        <a class="socneticon" href="https://www.facebook.com/thepanoplysteelband" target="_top">
-            <img src="https://image.freepik.com/free-icon/facebook-symbol_318-37686.png"> <!-- style="width:41px;height:41px;border:0;padding:5px"-->
-        </a>
-        <a class="socneticon" href="https://instagram.com/thepanoplysteelband/" target="_top">
-            <img src="https://image.freepik.com/free-icon/vintage--squared-camera_318-10040.png">d <!-- style="width:41px;height:41px;border:0;padding:5px"-->
-        </a>
+    <!-- Social network icons section -->
+    <div class="section" id="SocnetIcons">
+        <div class="row socneticons">
+            <a class="socneticon" href="https://soundcloud.com/the-panoply-steelband" target="_top">
+                <img src="images/loggor/soundcloud.png" alt="soundcloud" />
+            </a>
+            <a class="socneticon" href="https://www.youtube.com/user/thepanoplysteelband" target="_top">
+                <img src="images/loggor/youtube.png" alt="youtube" />
+            </a>
+            <a class="socneticon" href="https://www.facebook.com/thepanoplysteelband" target="_top">
+                <img src="images/loggor/facebook.png" alt="facebook" />
+            </a>
+            <a class="socneticon" href="https://instagram.com/thepanoplysteelband/" target="_top">
+                <img src="images/loggor/instagram.png" alt="instagram" />
+            </a>
+            <a class="socneticon" href="mailto:thepanoplysteelband@gmail.com" target="_top">
+                <img src="images/loggor/email.png" alt="thepanoplysteelband@gmail.com" />
+            </a>
+        </div>
     </div>
-</section>
 
-<section id="AboutDivider" class="divider">  <!-- style="background: url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/11163790_508440289315296_6116540000048146353_n_zps5whcchgz.jpg') no-repeat fixed; background-size: cover; height: 200px;"> -->
-    <h2 style="text-align: center; color: white;">
-        Om Oss
-    </h2>
-</section>
+    <!-- About divider -->
+    <div class="parallax-image-about sticky">
+    </div>
 
-<section id="about" style="background-color:white">
-	<div class="container">
-        <div class="row">
-            <p>Vi är en grupp engagerade musiker som tillsammans spelar oljefat med hemmabas i Södertälje. Vi spelar de flesta typer av musik.</p>
-            <p>Bandet har funnits i olika format uppemot 10 år, med medlemmar som spelat i upp till och mer än 20 år.</p>
+    <div class="section-header" id="OmBandet">
+        <div class="header-text">
+            <h2>Om oss</h2>
         </div>
+    </div>
 
-        <div class="gallery">
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Mikael_kvadrat_zpsu3oytxqd.jpg" /><h4>Mikael Nilsson</h4>
-                <p>6-Bas, sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Lotta_kvadrat_zpsmd70qn6u.jpg" /><h4>Lotta Ehlert</h4>
-                <p>6-Bas, 4-bas, sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Tommy_kvadrat_zpswk1mcjxj.jpg" /><h4>Tommy Nilsson</h4>
-                <p>4-Bas, sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/Matilda_zpsz1w5ha5f.png" /><h4>Matilda Bengs</h4>
-                <p>sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/Johan_zpsu7jyzm2m.png" /><h4>Johan Andersson</h4>
-                <p>gitarr, sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/Jonatan_zpsskbvqsuf.png" /><h4>Jonatan Lidström</h4>
-                <p>6-bas, alt, sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/Alina_zpsr21nmxry.png" /><h4>Alina Linerstad</h4>
-                <p>sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/Emma_zpsjjigylsc.png" /><h4>Emma Isaksson</h4>
-                <p>tenor, sopran</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/Lina_zpsulj39ff2.png" /><h4>Lina Widegren</h4>
-                <p>tenor</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Amanda_kvadrat_zpsu33ys1fs.jpg" /><h4>Amanda Persdotter</h4>
-                <p>tenor</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/2016-09-26_zps1w5n2jvr.jpg" /><h4>Niklas Weidenholm</h4>
-                <p>trummor</p>
-            </div>
-            <div class="col-sm-3">
-                <img class="img-responsive face" src="http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/Johannes_zpsh2a8a7ss.png" /><h4>Johannes Asplund-Samuelsson</h4>
-                <p>baryton</p>
-            </div>
-            
-        </div>
+    <!-- About section -->
+    <div class="section" id="About">
         
-	</div>
-</section>
+        <div class="row introtext">
+            <p><b>The Panoply Steelband</b> är en grupp engagerade musiker som spelar oljefat med hemmabas i Södertälje.</p>
+            <p>Vår repertoar innehåller de flesta typer av musik.</p>
+            <p>Bandet underhåller på event, fester, konserter, festivaler, och liknande.</p>
+            <p>Vi erbjuder även prova på-workshops och musikquiz.</p>
+        </div>
 
+    </div>
+    <br class="clearLeft" />
 
-<section id="FBDivider" class="divider" style="background: url('http://i1039.photobucket.com/albums/a473/thepanoplysteelband/Ansikten/6basblaring_zpstmyhwpmv.png');">
-  <h2 style="text-align: center; color: white;">
-      Vårt flöde
-  </h2>
-</section>
+    <!-- Social network divider -->
+    <div class="parallax-image-socnet sticky">
+    </div>
 
-<!-- /#page-header -->
+    <div class="section-header" id="Videor">
+        <div class="header-text">
+            <h2>Våra videor</h2>
+        </div>
+    </div>
 
+    <br class="clearLeft" />
 
+    <!-- Social network section -->
+    <div class="section">
+            <div id="Youtube-Root" class="socnet">
+                <iframe id="YoutubeIframe" class="socnetiframe" src="https://www.youtube.com/embed/?listType=user_uploads&amp;list=thepanoplysteelband"> 
+                </iframe>
+            </div>
+        </div>
+
+    <br class="clearLeft" />
+
+    <!-- Contact divider -->
+    <div class="parallax-image-contact sticky">
+    </div>
+
+    <div class="section-header" id="Boka">
+        <div class="header-text">
+            <h2>Boka oss</h2>
+        </div>
+    </div>
+
+    <br class="clearLeft" />
+
+    <!-- Contact section -->
+    <div class="section" id="contact">
+
+        <iframe id="GoogleForm" src="https://docs.google.com/forms/d/1NtQk-lAuL8Eh4UjLNLOfAnxoT9NpVxz24FW_iUCtreg/viewform?embedded=true" >
+        </iframe>  
+
+    </div>
+
+    <!-- Photographers section -->
+    <div class="section" id="fotografer">
+        <p>Foton av Per Eliasson, Hasse Asplund, Hans-Olof Östman, m fl</p>
+    </div>
   </body>
-</html>		
+</html>
